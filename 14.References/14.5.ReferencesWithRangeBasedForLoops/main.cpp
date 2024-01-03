@@ -26,6 +26,6 @@ int main(){
         std::cout << " " << score ;
     }
 	std::cout << std::endl;
-    
+    //G4G references check
     return 0;
 }
