@@ -19,19 +19,19 @@ int main()
     &a 0x2290fff7c4
     &b 0x2290fff7c0
     p 0x2290fff7c4
-*/
+
 
 //const int*p or int const*p
-/*  const int* p=&a;
+    const int* p=&a;
 
     *p=100; ///ERROR: value at p can't be changed
     p=&b;
     cout<<"a"<<a<<endl<<"b"<<b<<endl<<"*p"<<*p<<endl;
     cout<<"&a"<<&a<<endl<<"&b"<<&b<<endl<<"p"<<p;
-*/
+
 
 //int * const p
-/*
+
     int* const p=&a;
 
     *p=100; 
@@ -74,6 +74,9 @@ int main(){
     *ref=100; //ERROR
     ref=&b;     //ERROR
     cout<<a;
+
+    //ERROR
+    const int & const ref {a};
 */
 }
   
