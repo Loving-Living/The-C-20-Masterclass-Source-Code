@@ -3,22 +3,23 @@
 
 int main(){
 
-	//Declare pointer and reference
+//Declare pointer and reference
 
     double double_value {12.34};
     double& ref_double_value {double_value}; // Reference to double_value
     double* p_double_value {&double_value}; //Pointer to double_value
 	
-	//Reading
+//Reading
 	std::cout << "double_value : " << double_value << std::endl;
 	std::cout << "ref_double_value : " << ref_double_value << std::endl;
 	std::cout << "p_double_value : " << p_double_value << std::endl;
 	std::cout << "*p_double_value : " << *p_double_value << std::endl;
-	
+
+//Writing
 	//Writting through pointer
 	*p_double_value = 15.44;
 	
-    std::cout << std::endl;
+    	std::cout << std::endl;
 	std::cout << "double_value : " << double_value << std::endl;
 	std::cout << "ref_double_value : " << ref_double_value << std::endl;
 	std::cout << "p_double_value : " << p_double_value << std::endl;
@@ -27,7 +28,7 @@ int main(){
 	//Writting through reference
 	ref_double_value = 18.44;
 	
-    std::cout << std::endl;
+    	std::cout << std::endl;
 	std::cout << "double_value : " << double_value << std::endl;
 	std::cout << "ref_double_value : " << ref_double_value << std::endl;
 	std::cout << "p_double_value : " << p_double_value << std::endl;
@@ -36,6 +37,7 @@ int main(){
 
     double some_other_double{78.45};
 
+//Updation
     //Make the reference reference something else.
     ref_double_value = some_other_double;
 
