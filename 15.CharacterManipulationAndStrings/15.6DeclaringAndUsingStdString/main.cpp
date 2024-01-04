@@ -5,14 +5,14 @@ int main(){
 
 
 	std::string full_name;//Empty string
-    std::string planet {"Earth. Where the sky is blue"};//Initialize with string literal
+    	std::string planet {"Earth. Where the sky is blue"};//Initialize with string literal
 	std::string prefered_planet{planet};//Initialize with other existing string
-    std::string message {"Hello there",5};	//Initialize with part of a string literal.
+    	std::string message {"Hello there",5};	//Initialize with part of a string literal.
 											//Contains hello
-    std::string weird_message(4,'e');//Initialize with multiple copies of a char
+    	std::string weird_message(4,'e');//Initialize with multiple copies of a char
 									 // contains eeee
-    std::string greeting{"Hello World"};
-    std::string saying_hello{ greeting,6,5};//Initialize with part of an existing std::string
+    	std::string greeting{"Hello World"};
+    	std::string saying_hello{ greeting,6,5};//Initialize with part of an existing std::string
 											// starting at index 6, taking 5 characters.
 											//Will contain World.
 	
@@ -25,12 +25,12 @@ int main(){
 	std::cout << "saying_hello : " << saying_hello << std::endl;
 
     //Changing std::string at runtime
-    planet = "Earth. Where the sky is blue Earth. Where the sky is blue Earth. Where ";
+    planet = "Earth. Where the sky is blue Earth. Where the sky is blue Earth. Where ";	//Memory returned to cpu after this assignment
     std::cout << "planet : " << planet << std::endl;
 
 
     //Use a raw array
-    const char * planet1 {"Earth. Where the sky is blue Earth."};
+    const char * planet1 {"Earth. Where the sky is blue Earth."};	//Here no ERROR but the memory stored becomes inaccessible later on
     planet1 = "Earth. Where the sky is blue Earth. Where the sky is blue Earth. Where ";
     std::cout << "planet1 : " << planet1 << std::endl;
 
