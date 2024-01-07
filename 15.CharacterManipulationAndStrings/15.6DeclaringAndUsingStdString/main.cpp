@@ -26,12 +26,14 @@ int main(){
 
     //Changing std::string at runtime
     planet = "Earth. Where the sky is blue Earth. Where the sky is blue Earth. Where ";	//Memory returned to cpu after this assignment
+    planet[0]='l';	//NO ERROR
     std::cout << "planet : " << planet << std::endl;
 
 
     //Use a raw array
     const char * planet1 {"Earth. Where the sky is blue Earth."};	//Here no ERROR but the memory stored becomes inaccessible later on
-    planet1 = "Earth. Where the sky is blue Earth. Where the sky is blue Earth. Where ";
+    planet1 = "Earth. Where the sky is blue Earth. Where the sky is blue Earth. Where ";	//MEMORY LEAK
+    planet1[0]='L';	//ERROR
     std::cout << "planet1 : " << planet1 << std::endl;
 
 
