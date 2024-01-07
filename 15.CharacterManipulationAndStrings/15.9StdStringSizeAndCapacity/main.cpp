@@ -4,7 +4,7 @@
 
 int main(){
 
-    /*
+    
     std::string str1 {"Hello World"};
     std::string str2;
     std::string str3{};
@@ -29,46 +29,46 @@ int main(){
     std::cout << "str1 contains " << str1.length() << " characters" << std::endl; //11
     std::cout << "str2 contains " << str2.length() << " characters" << std::endl; // 0
     std::cout << "str3 contains " << str3.length() << " characters" << std::endl; // 0
-    */
+    
 
     //max_size : max number of characters a string can have on the system
-    /*
+    
 	//Prints : 2147483647 on my system
     std::string str1 {"Hello World"};
     std::cout << "std::string can hold " << str1.max_size() << " characters" << std::endl;
-    */
+    
 
 
     //Capacity
-    /*
-    std::string str1 {"Hello World"};
-    std::string str2;
-    std::cout << "str1 capacity : " << str1.capacity() << std::endl;
+    
+    	std::string str1 {"Hello World"};
+    	std::string str2;
+    	std::cout << "str1 capacity : " << str1.capacity() << std::endl;
 	std::cout << "str2 capacity : " << str2.capacity() << std::endl;
 	
 	str1 = "The sky is so blue, the grass is green. Kids are running all over the place";
 	
-    std::cout << "str1 size : " << str1.size() << std::endl;
+    	std::cout << "str1 size : " << str1.size() << std::endl;
 	std::cout << "str1 capacity : " << str1.capacity() << std::endl;
-    */
+    
 
     //Reserve : Update the capacity
-    /*
-    std::string str1 {"Hello World"};
+    
+	std::string str1 {"Hello World"};
 	std::cout << "str1 capacity : " << str1.capacity() << std::endl; // 15
 	std::cout << "str1 size : " << str1.size() << std::endl;
 
-    str1.reserve(100);
+    	str1.reserve(100);
     
-    std::cout << "str1 after reserve : " << str1 << std::endl; 
+    	std::cout << "str1 after reserve : " << str1 << std::endl; 
 	std::cout << "str1 capacity : " << str1.capacity() << std::endl; // 100
 	std::cout << "str1 size : " << str1.size() << std::endl;
-    */
+    
 
 
     //shrink_to_fit
-    std::string str1 {"Hello World"}; // 11
-    str1.reserve(100);
+    	std::string str1 {"Hello World"}; // 11
+    	str1.reserve(100);
 
 	std::cout << "str1 capacity : " << str1.capacity() << std::endl; //100
 	std::cout << "str1 size : " << str1.size() << std::endl; // 11
