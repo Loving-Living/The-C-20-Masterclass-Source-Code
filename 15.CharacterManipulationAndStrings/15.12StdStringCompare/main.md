@@ -31,11 +31,9 @@ Compares a  substring  of this string(from pos1, going count1 positions) to str
 `int compare( const CharT* s ) const;`
 
 Compares this string to the null-terminated character sequence beginning at the character pointed to by s.
+```
     std::string str5{"Hello"};
     const char* message {"World"};
     std::cout << "Comparing Hello to World : " << str5.compare(message) << std::endl;//-1
     std::cout << "Comparing Hello to World : " << str5.compare("World") << std::endl; //-1
-
-
-    return 0;
-}
+```
