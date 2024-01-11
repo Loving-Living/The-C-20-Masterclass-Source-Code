@@ -120,9 +120,9 @@ Inserts a string, obtained by `str.substr(index_str, count)` at the position ind
     str1.clear();
 
     std::cout << std::endl;
-    std::cout << "str1 is : " << str1 << std::endl;
-    std::cout << "str1 size : " << str1.size() << std::endl;
-    std::cout << "str1 capacity : " << str1.capacity() << std::endl;
+    std::cout << "str1 is : " << str1 << std::endl;			//""
+    std::cout << "str1 size : " << str1.size() << std::endl;		//0
+    std::cout << "str1 capacity : " << str1.capacity() << std::endl;	//15
 ```   
 ### 2) Erase
 
@@ -133,7 +133,7 @@ Starting at index index, erase count characters from the string. Notice that thi
     std::string str9 {"Hello World is a message used to start off things when learning programming!"};;
     
     str9.erase(11,str9.size() - 12);
-	std::cout << "str9 : " << str9 << std::endl;
+	std::cout << "str9 : " << str9 << std::endl;	//Hello World!
 	
 	//Reset str9.
 	str9 = "Hello World is a message used to start off things when learning programming!";
