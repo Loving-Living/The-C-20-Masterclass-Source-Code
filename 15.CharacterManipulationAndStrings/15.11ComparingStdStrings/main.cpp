@@ -44,7 +44,7 @@ int main(){
 														   //end of the string. Your comparisons may give 
 														   //erronous results
 	
-	const char hello_char_array[] {'h','e','l','l','o','\0'};//It works right if you put the '\' yourself
+	const char hello_char_array[] {'h','e','l','l','o','\0'};//It works right if you put the '\0' yourself
 	std::cout << hello_str << "== hello_char_array : "  << (hello_str == hello_char_array) << std::endl;
 	
     return 0;
