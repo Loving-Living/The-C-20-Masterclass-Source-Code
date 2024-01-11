@@ -7,7 +7,7 @@ int main(){
 ```
 # 1. INSERTION
 
-## b> push_back()
+## a> push_back()
 
 `void push_back( CharT ch );`
 Appends the given character ch to the end of the string. 
@@ -17,7 +17,7 @@ Appends the given character ch to the end of the string.
     std::cout << "str10 : " << str10 << std::endl;
 ```
 
-## a> insert()
+## b> insert()
 ### 1) insert(size_type index,size_type count, CharT ch)
 
 `basic_string& insert( size_type index, size_type count, CharT ch );`
@@ -87,7 +87,7 @@ Inserts string str at the position index
     	std::cout << "str6 : " << str6 << std::endl;	//Hello World!
 ```
     
-# 5) insert( size_type index, const basic_string& str, size_type index_str, size_type count = npos)
+### 5) insert( size_type index, const basic_string& str, size_type index_str, size_type count = npos)
 
 `basic_string& insert( size_type index, const basic_string& str,size_type index_str, size_type count = npos);`
 
