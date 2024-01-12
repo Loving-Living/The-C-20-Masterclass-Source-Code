@@ -1,5 +1,6 @@
 # Lambda function signature : 
-```                                [capture list] (parameters) ->return type{
+```
+                                [capture list] (parameters) ->return type{
                                         // Function body
                                 }
 ```
